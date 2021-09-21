@@ -5,6 +5,9 @@
  */
 package models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Austin Graham, Chandler Bottomley, Jordan Lee
@@ -14,6 +17,7 @@ public class Game {
     private int Id;
     private int answer;
     private boolean status;
+    List<Round> Rounds = new ArrayList<>();
     
     public int getId() {
         return Id;
@@ -75,6 +79,14 @@ public class Game {
     @Override
     public String toString() {
         return "Game{" + "Id=" + Id + ", answer=" + answer + ", status=" + status + '}';
+    }
+    
+    public List<Round> getRounds(){
+        return Rounds;
+    }
+    
+    public void addRound(Round R){
+        Rounds.add(R);
     }
     
     

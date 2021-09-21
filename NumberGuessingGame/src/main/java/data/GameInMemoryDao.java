@@ -49,9 +49,7 @@ public class GameInMemoryDao implements GameDao{
     public void addNewGame(Game NewGame){
         Games.add(NewGame);
     }
-    
- 
-    
+
     public GameInMemoryDao(){
         this.list = new ArrayList<Game>();
     }
