@@ -5,9 +5,6 @@
  */
 package data;
 
-
-import static java.lang.constant.ConstantDescs.NULL;
-
 import data.GameDao;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,37 +18,35 @@ import models.Round;
  */
 public class GameInMemoryDao implements GameDao{
     
-    private static final List<Game> Games = new ArrayList<>();
-       private ArrayList<Game> list;
-
+    private ArrayList<Game> list;
+    private ArrayList<Round> rounds;
+    
+    @Override
+    public List<Round> getAllRounds(int id) {
+        return rounds;
+    }
+    
+    public void addNewGame(Game NewGame){
+        list.add(NewGame);
+    }
+        
+    public GameInMemoryDao(){
+        this.list = new ArrayList<Game>();
+    }
+    
     @Override
     public List<Game> getAll() {
-        return new ArrayList<>(Games);
+        return this.list;
     }
 
     @Override
     public Game getById(int id) {
-        return Games.stream()
-                .filter(i-> i.getId() == id)
-                .findAny()
-                .orElse(null);
+       return this.list.stream().filter(x -> x.getId() == id).collect(Collectors.toList()).get(0);
     }
 
     @Override
-    public List<Round> getAllRounds(int id) {
-        Game ThisGame = Games.stream()
-                .filter(i-> i.getId() == id)
-                .findAny()
-                .orElse(null);
-        return ThisGame.getRounds();
-    }
-    
-    public void addNewGame(Game NewGame){
-        Games.add(NewGame);
-    }
-
-    public GameInMemoryDao(){
-        this.list = new ArrayList<Game>();
+    public List<Game> getAllID(int id) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     
