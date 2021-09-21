@@ -12,14 +12,13 @@ import models.Game;
  *
  * @author chadb
  */
-public interface GameDoa {
-    
+public interface GameDao {
+        
     List<Game> getAll();
     
     Game getById(int id);
     
-    List<Game> getAllID(int id);
-    
+    List<Game> getAllRounds(int id);
     
     
 }
