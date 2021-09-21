@@ -4,9 +4,13 @@
  * and open the template in the editor.
  */
 package data;
+
 import static java.lang.constant.ConstantDescs.NULL;
+
+import data.GameDao;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 import models.Game;
 import models.Round;
 
@@ -17,6 +21,7 @@ import models.Round;
 public class GameInMemoryDao implements GameDao{
     
     private static final List<Game> Games = new ArrayList<>();
+       private ArrayList<Game> list;
 
     @Override
     public List<Game> getAll() {
@@ -43,6 +48,13 @@ public class GameInMemoryDao implements GameDao{
     public void addNewGame(Game NewGame){
         Games.add(NewGame);
     }
+    
+ 
+    
+    public GameInMemoryDao(){
+        this.list = new ArrayList<Game>();
+    }
+
     
     
     

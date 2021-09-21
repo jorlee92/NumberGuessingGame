@@ -14,7 +14,7 @@ import models.Round;
  * @author chadb
  */
 public interface GameDao {
-        
+    
     List<Game> getAll();
     
     Game getById(int id);
