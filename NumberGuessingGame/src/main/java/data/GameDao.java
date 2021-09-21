@@ -18,8 +18,7 @@ public interface GameDao {
     
     Game getById(int id);
     
-    List<Game> getAllID(int id);
-    
+    List<Game> getAllRounds(int id);
     
     
 }
