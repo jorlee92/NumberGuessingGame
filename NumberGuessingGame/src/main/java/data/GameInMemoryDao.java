@@ -5,6 +5,7 @@
  */
 package data;
 
+
 import static java.lang.constant.ConstantDescs.NULL;
 
 import data.GameDao;
@@ -54,7 +55,6 @@ public class GameInMemoryDao implements GameDao{
     public GameInMemoryDao(){
         this.list = new ArrayList<Game>();
     }
-
     
     
     
