@@ -32,6 +32,7 @@ public class GameInMemoryDao implements GameDao{
         
     public GameInMemoryDao(){
         this.list = new ArrayList<Game>();
+        this.rounds = new ArrayList<Round>();
     }
     
     @Override

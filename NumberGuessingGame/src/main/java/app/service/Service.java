@@ -21,8 +21,7 @@ public class Service {
     public String generateAnswer(){
         
         String result = "";
-        
-        for(int i = 0; i < 4; i++){
+        while(result.length() < 4){
             int random  = (int)((Math.random() * (10)));
             
             //if my result doesn't contain the new generated digit then I add it to the result

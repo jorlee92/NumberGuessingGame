@@ -15,10 +15,15 @@ import java.util.List;
 public class Game {
     
     private int Id;
-    private int answer;
+    private String answer;
     private boolean status;
+    private static int lastID =0;
     List<Round> Rounds = new ArrayList<>();
     
+    public Game(){
+        this.setId(lastID);
+        this.lastID = this.lastID + 1;
+    }
     public int getId() {
         return Id;
     }
@@ -27,11 +32,11 @@ public class Game {
         this.Id = Id;
     }
 
-    public int getAnswer() {
+    public String getAnswer() {
         return answer;
     }
 
-    public void setAnswer(int answer) {
+    public void setAnswer(String answer) {
         this.answer = answer;
     }
 
@@ -47,7 +52,7 @@ public class Game {
     public int hashCode() {
         int hash = 7;
         hash = 97 * hash + this.Id;
-        hash = 97 * hash + this.answer;
+        hash = 97 * hash + Integer.parseInt(answer);
         hash = 97 * hash + (this.status ? 1 : 0);
         return hash;
     }
