@@ -5,10 +5,21 @@
  */
 package data;
 
+import java.util.List;
+import models.Game;
+
 /**
  *
  * @author chadb
  */
 public interface GameDoa {
+    
+    List<Game> getAll();
+    
+    Game getById(int id);
+    
+    List<Game> getAllID(int id);
+    
+    
     
 }

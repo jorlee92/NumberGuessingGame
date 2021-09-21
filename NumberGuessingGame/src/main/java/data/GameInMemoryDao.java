@@ -4,11 +4,14 @@
  * and open the template in the editor.
  */
 package data;
+import data.GameDoa;
 
 /**
  *
  * @author chadb
  */
-public class GameInMemoryDao {
+public class GameInMemoryDao implements GameDao {
+    
+    
     
 }
