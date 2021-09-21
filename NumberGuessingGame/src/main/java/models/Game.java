@@ -14,7 +14,7 @@ public class Game {
     private int Id;
     private int answer;
     private boolean status;
-
+    
     public int getId() {
         return Id;
     }

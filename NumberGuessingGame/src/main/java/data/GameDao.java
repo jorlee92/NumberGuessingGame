@@ -7,6 +7,7 @@ package data;
 
 import java.util.List;
 import models.Game;
+import models.Round;
 
 /**
  *
@@ -18,7 +19,7 @@ public interface GameDao {
     
     Game getById(int id);
     
-    List<Game> getAllRounds(int id);
+    List<Round> getAllRounds(int id);
     
     
 }

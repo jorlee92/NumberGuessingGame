@@ -4,9 +4,11 @@
  * and open the template in the editor.
  */
 package data;
+import static java.lang.constant.ConstantDescs.NULL;
 import java.util.ArrayList;
 import java.util.List;
 import models.Game;
+import models.Round;
 
 /**
  *
@@ -23,12 +25,19 @@ public class GameInMemoryDao implements GameDao{
 
     @Override
     public Game getById(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return Games.stream()
+                .filter(i-> i.getId() == id)
+                .findAny()
+                .orElse(null);
     }
 
     @Override
-    public List<Game> getAllRounds(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public List<Round> getAllRounds(int id) {
+        Game ThisGame = Games.stream()
+                .filter(i-> i.getId() == id)
+                .findAny()
+                .orElse(null);
+        return ThisGame.getRounds();
     }
     
     public void addNewGame(Game NewGame){
