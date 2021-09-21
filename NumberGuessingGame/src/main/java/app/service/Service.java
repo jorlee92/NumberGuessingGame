@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package service;
+package app.service;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
-import models.Game;
-import models.Round;
+import app.models.Game;
+import app.models.Round;
 
 /**
  *
