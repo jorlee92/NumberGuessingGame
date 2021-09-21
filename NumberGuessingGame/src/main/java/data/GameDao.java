@@ -12,7 +12,7 @@ import models.Game;
  *
  * @author chadb
  */
-public interface GameDoa {
+public interface GameDao {
     
     List<Game> getAll();
     

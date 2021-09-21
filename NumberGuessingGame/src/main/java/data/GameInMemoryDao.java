@@ -4,13 +4,38 @@
  * and open the template in the editor.
  */
 package data;
-import data.GameDoa;
+import data.GameDao;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+import models.Game;
 
 /**
  *
  * @author chadb
  */
 public class GameInMemoryDao implements GameDao {
+    
+    private ArrayList<Game> list;
+    
+    public GameInMemoryDao(){
+        this.list = new ArrayList<Game>();
+    }
+    
+    @Override
+    public List<Game> getAll() {
+        return this.list;
+    }
+
+    @Override
+    public Game getById(int id) {
+       return this.list.stream().filter(x -> x.getId() == id).collect(Collectors.toList()).get(0);
+    }
+
+    @Override
+    public List<Game> getAllID(int id) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     
