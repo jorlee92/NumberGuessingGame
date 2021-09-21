@@ -20,6 +20,7 @@ public interface GameDao {
     Game getById(int id);
     
     List<Round> getAllRounds(int id);
-    
+        
+     public void addNewGame(Game NewGame);
     
 }
