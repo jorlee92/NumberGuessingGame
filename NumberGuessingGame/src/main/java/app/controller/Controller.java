@@ -68,6 +68,10 @@ public class Controller {
         Round r = new Round();
         dao.getAllRounds(0).add(r);
         Game game = dao.getById(g.getGameID());
+        if(game.isStatus()){
+            r.setGuessResult("Game is finished, feel free to start a new game at /api/game !");
+            return r;
+        }
         r.setGuess(g.getGuess());
         System.out.println("<---- Debugging ---->");
         System.out.println(game.getAnswer() + " " + game.getId());
