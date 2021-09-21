@@ -1,8 +1,8 @@
-C:\Users\me\Documents\Github\NumberGuessingGame\NumberGuessingGame\src\main\java\service\Service.java
 C:\Users\me\Documents\Github\NumberGuessingGame\NumberGuessingGame\src\main\java\app\App.java
-C:\Users\me\Documents\Github\NumberGuessingGame\NumberGuessingGame\src\main\java\data\GameInMemoryDao.java
-C:\Users\me\Documents\Github\NumberGuessingGame\NumberGuessingGame\src\main\java\models\Game.java
-C:\Users\me\Documents\Github\NumberGuessingGame\NumberGuessingGame\src\main\java\controller\Controller.java
-C:\Users\me\Documents\Github\NumberGuessingGame\NumberGuessingGame\src\main\java\models\Guess.java
-C:\Users\me\Documents\Github\NumberGuessingGame\NumberGuessingGame\src\main\java\models\Round.java
-C:\Users\me\Documents\Github\NumberGuessingGame\NumberGuessingGame\src\main\java\data\GameDao.java
+C:\Users\me\Documents\Github\NumberGuessingGame\NumberGuessingGame\src\main\java\app\data\GameInMemoryDao.java
+C:\Users\me\Documents\Github\NumberGuessingGame\NumberGuessingGame\src\main\java\app\models\Round.java
+C:\Users\me\Documents\Github\NumberGuessingGame\NumberGuessingGame\src\main\java\app\data\GameDao.java
+C:\Users\me\Documents\Github\NumberGuessingGame\NumberGuessingGame\src\main\java\app\controller\Controller.java
+C:\Users\me\Documents\Github\NumberGuessingGame\NumberGuessingGame\src\main\java\app\models\Guess.java
+C:\Users\me\Documents\Github\NumberGuessingGame\NumberGuessingGame\src\main\java\app\models\Game.java
+C:\Users\me\Documents\Github\NumberGuessingGame\NumberGuessingGame\src\main\java\app\service\Service.java

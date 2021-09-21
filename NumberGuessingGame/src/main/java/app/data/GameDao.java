@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package data;
+package app.data;
 
 import java.util.List;
-import models.Game;
-import models.Round;
+import app.models.Game;
+import app.models.Round;
 
 /**
  *

@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package controller;
+package app.controller;
 
-import data.GameDao;
-import data.GameInMemoryDao;
-import models.Game;
-import models.Guess;
-import models.Round;
+import app.data.GameDao;
+import app.data.GameInMemoryDao;
+import app.models.Game;
+import app.models.Guess;
+import app.models.Round;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
