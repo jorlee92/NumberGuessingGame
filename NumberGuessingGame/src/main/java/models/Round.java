@@ -14,15 +14,15 @@ import java.util.Objects;
  */
 public class Round {
     
-    private int guess;
+    private String guess;
     private LocalDateTime timestamp;
     private String guessResult;
 
-    public int getGuess() {
+    public String getGuess() {
         return guess;
     }
 
-    public void setGuess(int guess) {
+    public void setGuess(String guess) {
         this.guess = guess;
     }
 
@@ -45,7 +45,8 @@ public class Round {
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 67 * hash + this.guess;
+        //Probably gonna break easily due to my dumb change.
+        hash = 67 * hash + this.guess.toCharArray().length;
         hash = 67 * hash + Objects.hashCode(this.timestamp);
         hash = 67 * hash + Objects.hashCode(this.guessResult);
         return hash;

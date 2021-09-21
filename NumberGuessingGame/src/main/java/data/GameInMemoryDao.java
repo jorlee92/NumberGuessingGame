@@ -42,13 +42,6 @@ public class GameInMemoryDao implements GameDao{
     @Override
     public Game getById(int id) {
        return this.list.stream().filter(x -> x.getId() == id).collect(Collectors.toList()).get(0);
-    }
-
-    @Override
-    public List<Game> getAllID(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-    
+    }    
     
 }
